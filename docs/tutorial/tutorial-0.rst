@@ -100,18 +100,23 @@ Running the app
 Before you run the app, you'll need to install toga. Although you *can* install
 toga by just running::
 
-    $ pip install --pre toga
+    $ pip3 install --pre toga
 
 We strongly suggest that you **don't** do this. We'd suggest creating a `virtual
 environment`_ first, and installing toga in that virtual environment.
 
 .. _virtual environment: http://docs.python-guide.org/en/latest/dev/virtualenvs/
 
-.. note:: Minimum versions
+.. warning:: Python Compatibility
 
-    Toga has some minimum requirements:
+    * Toga requires **Python 3**, Python 2 is not supported.
+    * Toga is tested to work for Python 3.4+
 
-    * If you're on OS X, you need to be on 10.7 (Lion) or newer.
+.. note:: Minimum requirements for macOS
+
+    * If you're on macOS, you need to be on 10.7 (Lion) or newer.
+
+.. note:: Minimum requirements for Linux
 
     * If you're on Linux, you need to have GTK+ 3.4 or later. This is the
       version that ships starting with Ubuntu 12.04 and Fedora 17.
@@ -129,12 +134,12 @@ environment`_ first, and installing toga in that virtual environment.
 
 Once you've got toga installed, you can run your script::
 
-    $ python -m helloworld
+    $ python3 -m helloworld
 
-.. note:: ``python -m helloworld`` vs ``python helloworld.py``
+.. note:: ``python3 -m helloworld`` vs ``python3 helloworld.py``
 
     Note the ``-m`` flag and absence of the ``.py`` extension in this command
-    line. If you run ``python helloworld.py``, you may see some errors like::
+    line. If you run ``python3 helloworld.py``, you may see some errors like::
 
         NotImplementedError: Application does not define open_document()
 
